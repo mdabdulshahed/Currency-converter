@@ -40,12 +40,12 @@ export default {
             curr : 0
         }
     },
-    // mounted() {
-    //     fetch('http://data.fixer.io/api/latest?access_key=2441f0ef021326b8f6427b8888d0c3dd&symbols=INR,USD,GBP')
-    //     .then(res => res.json())
-    //     .then(data => this.results = data.rates)
-    //     .then(data => console.log(data));
-    // },
+    mounted() {
+        fetch('http://data.fixer.io/api/latest?access_key=2441f0ef021326b8f6427b8888d0c3dd&symbols=INR,USD,GBP')
+        .then(res => res.json())
+        .then(data => this.results = data.rates)
+        .then(data => console.log(data));
+    },
     name : 'value',
     methods: {
         
